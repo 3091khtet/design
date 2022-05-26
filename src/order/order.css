@@ -1,0 +1,136 @@
+
+
+.orderCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-flow:column;
+flex-wrap:wrap;
+margin-top: 100px;
+}
+.orderContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+.orderBox {
+    margin-left:50px;
+    border: 4px solid white;
+    box-shadow:0 0 10px white,
+               0 0 10px gray;
+}
+.orderContent img{
+    border-radius: 20px;
+}
+.orderBox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.orderBox .orderInput {
+display:grid;
+grid-template-columns: repeat(2,1fr);
+}
+.orderInput input{
+    margin:20px 10px;
+    width:250px;
+
+}
+.orderBox textarea{
+width:500px;
+height:100px;
+margin-top: 50px;
+}
+
+.orderBox button{
+    position: relative;
+    padding:5px;
+    border-radius: 20px;
+    margin-top:30px;
+    width:200px;
+    font-size: 1.5rem;
+    z-index:0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.orderBox button::before{
+    content: "";
+    position: absolute;
+    width:0;
+    right:0;
+    height:95%;
+    background-color: blue;
+transition: .3s all ease;
+z-index:-1;
+border-radius: 30px;
+}
+
+.orderBox button:hover::before{
+    width:100%;
+left:0;
+}
+.orderBox button:hover{
+    color:white;
+}
+
+
+
+
+
+
+@media (max-width:638px){
+
+.orderContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.orderBox{
+    margin-top:40px;
+}
+.orderBox .orderInput{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderBox textarea{
+width:350px;
+}
+
+}
+
+
+@media (max-width:522px) {
+    .orderContent img{
+        width:350px;
+        height:300px;
+    }
+}
+
+
+@media (max-width:430px) {
+
+.orderBox{
+    margin-left: -10px;
+}
+.orderContent img{
+    width:300px;
+height:300px;
+}
+
+.orderBox textarea{
+    width:300px;
+}
+
+}

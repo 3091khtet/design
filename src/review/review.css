@@ -1,0 +1,63 @@
+ 
+.reviewCon{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.reviewContent{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
+.reviewContent img{
+border-radius:50%;
+width:100px;
+height:100px;
+border:5px solid white;
+position: relative;
+bottom:50px;
+
+}
+.reviewContent p{
+    width:250px
+}
+.firstImgCon,.secondImgCon,.thirdImgCon{
+    background-color:rgba(0,0,0,.6);
+display: flex;
+flex-direction: column;
+align-items: center;
+width:300px;
+margin:30px 30px;
+border-radius: 20px;
+border:5px white solid;
+box-shadow:0 0 10px white,
+           0 0 10px darkcyan,
+           0 0 10px darkgray
+}
+
+.ri-star-smile-fill{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

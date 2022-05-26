@@ -1,0 +1,113 @@
+
+.homeCon{
+   position:relative;
+   top:200px;
+   display:flex;
+   flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+
+ .homeCon img{
+     
+     border-radius: 50%;
+     width:400px;
+     height:350px;
+     animation:burger 2s infinite;
+ }
+
+
+@keyframes burger {
+    25%{
+transform: translateY(20px);
+    }
+    50%{
+transform: translateY(-20px);
+    }
+}
+
+.homeCon p{
+    width:600px;
+    background: linear-gradient(to right,rgb(248, 0, 248),blue,cyan);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight:333;
+
+}
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeContent button{
+    position: relative;
+    width:150px;
+    font-size:2rem;
+    padding:5px;
+    border-radius:40px;
+    z-index:0;
+}
+
+.homeContent button::before{
+    position:absolute;
+    content: "";
+    top:3px;
+    width:0;
+  right:0;
+    height:90%;
+    background-color: red;
+    transition:.4s all ease;
+  z-index:-1;
+  border-radius: 30px;
+}
+
+.homeContent button:hover::before{
+width:100%;
+left:0;
+}
+.homeContent button:hover{
+    color:#fff;
+}
+.homeTypo{
+    background: linear-gradient(to right,purple,blue,cyan);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight:333;
+}
+
+
+@media (max-width:608px) {
+.homeContent .homeTypo{
+    width:350px;
+}
+.homeContent p{
+    width:400px;
+    flex-wrap: wrap;
+      background: linear-gradient(to right,rgb(235, 14, 235),blue,cyan);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight:333;
+}
+.homeCon img{
+    margin-top: 50px;
+}
+
+
+}
+
+
+@media (max-width:418px) {
+.homeTypo{
+    font-size:2rem!important;
+    margin-left:40px;
+}
+.homeContent p{
+width:300px;
+}
+
+
+
+}
